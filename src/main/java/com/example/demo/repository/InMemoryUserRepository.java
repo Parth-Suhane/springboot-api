@@ -20,4 +20,8 @@ public class InMemoryUserRepository {
         users.put(id, user);
         return user;
     }
+    public Optional<User> findById(Long id) {
+        return Optional.ofNullable(users.get(id));
+    }
+
 }
