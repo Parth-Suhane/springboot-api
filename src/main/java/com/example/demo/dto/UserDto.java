@@ -16,4 +16,18 @@ public class UserDto {
     @Size(min = 6, max = 12)
     private String password;
 
+    public void setEmail(String email) {
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
